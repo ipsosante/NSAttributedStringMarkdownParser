@@ -353,6 +353,9 @@ int markdownConsume(char* text, int token, yyscan_t scanner);
       break;
     }
     case MARKDOWNURL: {
+        // ipsosanté: Guillaume: Disable automatic URL recogition, the grammar is broken as fuck.
+        // (and this is useless for our purpose)
+        break;
       NSAttributedStringMarkdownLink* link = [[NSAttributedStringMarkdownLink alloc] init];
       link.url = [NSURL URLWithString:textAsString];
       link.range = NSMakeRange(_accum.length, textAsString.length);
