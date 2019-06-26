@@ -1,6 +1,3 @@
 [submodule "fmemopen"]
 	path = fmemopen
-	url = git@github.com:jverkoey/fmemopen.git
-[submodule "nimbus"]
-	path = nimbus
-	url = git://github.com/jverkoey/nimbus.git
+	url = git://github.com/NimbusKit/memorymapping.git
